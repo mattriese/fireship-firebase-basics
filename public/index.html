@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-auth-compat.js"></script>
+    <script>
+      const firebaseApp = firebase.initializeApp({
+        apiKey: 'AIzaSyDhO0L-pxPj-96KqW9miLk4kxyaalESO-g',
+        authDomain: 'fireship-next-mriese.firebaseapp.com',
+        projectId: 'fireship-next-mriese',
+        storageBucket: 'fireship-next-mriese.appspot.com',
+        messagingSenderId: '638617386421',
+        appId: '1:638617386421:web:1c6fca2955133661e02dfc',
+        measurementId: 'G-2337HJFM8K',
+      });
+      // const db = firebaseApp.firestore();
+      // const auth = firebaseApp.auth();
+    </script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script> -->
+    <script src="app.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>My awesome app 🔥</h1>
+
+    <section id="whenSignedOut">
+      <button id="signInBtn">Sign in with Google</button>
+    </section>
+
+    <section id="whenSignedIn" hidden="true">
+      <div id="userDetails"></div>
+      <button id="signOutBtn">Sign Out</button>
+    </section>
+  </body>
+</html>
